@@ -1,4 +1,4 @@
-# HELM commands
+### HELM commands
 ~~~
 helm package volga
 helm install volga .\volga-0.1.0.tgz
@@ -22,23 +22,23 @@ kubectl logs -f volga-59978589cc-sdppr -n tenant-0
 kubectl get pod -n tenant-0
 ~~~
 
-# Remove images
+### Remove images
 
 docker system prune
 
-# See all local images
+### See all local images
 
 docker image ls -a
 
-# build & tag local image
+### build & tag local image
 
 docker build . --tag gcr.io/axonite-dev/group-multiplexer
 
-# Push image to GCP registry
+### Push image to GCP registry
 
 docker push gcr.io/axonite-dev/group-multiplexer
 
-# Run intercatively
+### Run intercatively
 ~~~
 docker run -it gcr.io/axonite-dev/dnieper /bin/sh
 docker run -p 127.0.0.1:8080:8080/tcp gcr.io/axonite-dev/group-multiplexer
