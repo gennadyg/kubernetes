@@ -45,6 +45,7 @@ docker run -p 127.0.0.1:8080:8080/tcp gcr.io/axonite-dev/group-multiplexer
 ~~~
 ### az 
 az aks --help
+az account show --output table
 
 ### Power Shell 
 
