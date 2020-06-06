@@ -48,7 +48,7 @@ az aks --help
 az account show --output table
 az acr login -n adpdev
 az acr repository list -n adpdev -o table
-
+az ad sp createfor-rbac --skip-assignment
 
 ### Power Shell 
 
