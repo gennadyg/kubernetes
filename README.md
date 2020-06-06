@@ -49,4 +49,5 @@ az aks --help
 ### Power Shell 
 
 start microsoft-edge:http://www.ynet.co.il
+Set-Alias -Name k -Value kubectl
 
