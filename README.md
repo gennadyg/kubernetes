@@ -43,4 +43,10 @@ docker push gcr.io/axonite-dev/group-multiplexer
 docker run -it gcr.io/axonite-dev/dnieper /bin/sh
 docker run -p 127.0.0.1:8080:8080/tcp gcr.io/axonite-dev/group-multiplexer
 ~~~
+### az 
+az aks --help
+
+### Power Shell 
+
+start microsoft-edge:http://www.ynet.co.il
 
