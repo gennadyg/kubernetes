@@ -20,6 +20,7 @@ kubectl describe po -n tenant-0
 kubectl logs -f volga-59978589cc-sdppr -n tenant-0
 
 kubectl get pod -n tenant-0
+ k get service --watch
 ~~~
 
 ### Remove images
@@ -48,7 +49,11 @@ az aks --help
 az account show --output table
 az acr login -n adpdev
 az acr repository list -n adpdev -o table
+// create appId & password 
 az ad sp createfor-rbac --skip-assignment
+$acrId = az acr show --name adpdev --resource-group adp-dev --query "id" -o tsv
+az role assignment create --assignee "$appId" --role Reader --scope $acrId
+az acr list --resource-group adp-dev --query "[].{acrLoginServerr:loginServer}" -o table
 
 ### Power Shell 
 
