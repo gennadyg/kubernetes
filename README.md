@@ -59,7 +59,8 @@ az role assignment create --assignee "$appId" --role Reader --scope $acrId
 az acr list --resource-group adp-dev --query "[].{acrLoginServerr:loginServer}" -o table
 ~~~
 ### Power Shell 
-
+~~~
 start microsoft-edge:http://www.ynet.co.il
 Set-Alias -Name k -Value kubectl
-
+function gitlog {git log --graph --oneline --decorate --all}
+~~~
