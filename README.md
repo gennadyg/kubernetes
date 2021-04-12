@@ -1,9 +1,14 @@
 ###
 
+~~~
+helm install --debug --dry-run aks-pod-deleter --namespace services-uksouth .\aks_del_chart\
+helm install --debug aks-pod-deleter --namespace services-uksouth .\aks_del_chart\
+helm uninstall --debug aks-pod-deleter --namespace services-uksouth
+
 kubectl get events --all-namespaces  --sort-by='.metadata.creationTimestamp'
 kubectl create -f .\cronjob.yaml
 kubectl get pods -n services
-
+~~~
 ### HELM commands
 ~~~
 helm package volga
