@@ -1,3 +1,9 @@
+###
+
+kubectl get events --all-namespaces  --sort-by='.metadata.creationTimestamp'
+kubectl create -f .\cronjob.yaml
+kubectl get pods -n services
+
 ### HELM commands
 ~~~
 helm package volga
