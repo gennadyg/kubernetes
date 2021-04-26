@@ -1,9 +1,10 @@
-###
+### Usefuill commands
+~~~
 kubectl get no -o wide && kubectl top no
 kubectl get jobs -n services-uksouth
 kubectl get pods -n services-uksouth
 kubectl get pods --field-selector=status.phase=Running --no-headers=true -o custom-columns=':metadata.name' -n services-uksouth
-~~~
+
 helm install --debug --dry-run aks-pod-deleter --namespace services-uksouth .\aks_del_chart\
 helm install --debug aks-pod-deleter --namespace services-uksouth .\aks_del_chart\
 helm uninstall --debug aks-pod-deleter --namespace services-uksouth
