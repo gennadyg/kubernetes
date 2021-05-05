@@ -1,4 +1,4 @@
-### Usefuill commands
+### Useful commands
 ~~~
 kubectl get no -o wide && kubectl top no
 kubectl get jobs -n services-uksouth
