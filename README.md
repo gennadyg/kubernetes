@@ -1,6 +1,7 @@
 ### Useful commands
-az aks check-acr --acr adpdev.azurecr.io -n adp-dev-uksouth -g adp-dev-uksouth --subscription adp_dev_compute1
+
 ~~~
+az aks check-acr --acr adpdev.azurecr.io -n adp-dev-uksouth -g adp-dev-uksouth --subscription adp_dev_compute1
 kubectl get no -o wide && kubectl top no
 kubectl get jobs -n services-uksouth
 kubectl get pods -n services-uksouth
