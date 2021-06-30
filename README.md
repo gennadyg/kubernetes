@@ -1,6 +1,7 @@
 ### Useful commands
 
 ~~~
+kubectl -n services-uksouth describe pod core-dms-workflows-deployment-76f977cbb5-k64rc | grep version
 az aks check-acr --acr adpdev.azurecr.io -n adp-dev-uksouth -g adp-dev-uksouth --subscription adp_dev_compute1
 kubectl get no -o wide && kubectl top no
 kubectl get jobs -n services-uksouth
